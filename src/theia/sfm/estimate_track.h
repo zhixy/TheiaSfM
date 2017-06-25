@@ -101,7 +101,7 @@ class TrackEstimator {
   // Estimate only the tracks supplied by the user.
   Summary EstimateTracks(const std::unordered_set<TrackId>& track_ids);
 
- private:
+ protected:
   void EstimateTrackSet(const int start, const int stop);
   bool EstimateTrack(const TrackId track_id);
 

@@ -91,7 +91,7 @@ class IncrementalReconstructionEstimator : public ReconstructionEstimator {
   ReconstructionEstimatorSummary Estimate(ViewGraph* view_graph,
                                           Reconstruction* reconstruction);
 
- private:
+ protected:
   // Choose two cameras to use as the seed for incremental reconstruction. These
   // cameras should observe 3D points that are well-conditioned. We determine
   // the conditioning of 3D points by examining the median viewing angle of the
